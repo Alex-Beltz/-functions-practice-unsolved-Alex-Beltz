@@ -11,18 +11,19 @@
  */
 
 // Your function code starts here...
-function rectArea(sideA, sideB) {
-  return sideA * sideB;
-}
+// function rectArea(sideA, sideB) {
+//   return sideA * sideB;
+// }
 
+const rectArea = (sideA, sideB) => sideA * sideB;
 // Use the function you created above to calculate the areas of 3 rooms
 // Assign the results to room1, room2, and room3 variables
 // Data for calculation: room1: 4 by 6, room2: 13 by 3, room3: 4 by 8
 
 // Your code goes here:
-let room1 = rectArea(4, 6);
-let room2 = rectArea(13, 3);
-let room3 = rectArea(4, 8);
+const room1 = rectArea(4, 6);
+const room2 = rectArea(13, 3);
+const room3 = rectArea(4, 8);
 
 /**
  * =============================================================
@@ -35,10 +36,11 @@ let room3 = rectArea(4, 8);
  */
 
 // Your code goes here...
-function totalRoomsArea(area1, area2, area3) {
-  return area1 + area2 + area3;
-}
+// function totalRoomsArea(area1, area2, area3) {
+//   return area1 + area2 + area3;
+// }
 
+const totalRoomsArea = (area1, area2, area3) => area1 + area2 + area3;
 // Make the function call in the parentheses of the console.log statement.
 // Use room1, room2, room3 values as arguments for the function call
 
@@ -48,7 +50,7 @@ console.log(totalRoomsArea(room1, room2, room3));
 // Once you're finished run the test with "npm run test-2"
 // If the test has all tests passed, switch to the next exercise file
 // If any of the tests fails, refactor the code and run the test command after you've fixed the function
-
+const result = () => console.log(totalRoomsArea(room1, room2, room3));
 // Do not delete or change the lines beneath
 const f = {
   rectArea: rectArea || undefined,
